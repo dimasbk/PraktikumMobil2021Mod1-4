@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white">>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/blue_bg"
+            >
+
+
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tvjdup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Review Film"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="Masukkan Judul Film"
+            android:ems="15"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:background="@drawable/edit_round"
+            android:elevation="6dp"
+            android:layout_below="@id/tvjdup"
+            android:layout_marginTop="40dp"
+            android:id="@+id/etjdlup"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:hint="Masukkan Tahun Rilis"
+            android:ems="15"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:background="@drawable/edit_round"
+            android:elevation="6dp"
+            android:layout_below="@id/etjdlup"
+            android:layout_marginTop="15dp"
+            android:id="@+id/etthnup"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rgupdate"
+            android:layout_below="@id/etthnup"
+            android:paddingTop="10dp"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semua Umur"
+                android:id="@+id/rb1up"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:checked="false"/>
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13+"
+                android:id="@+id/rb2up"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:checked="false"/>
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18+"
+                android:id="@+id/rb3up"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:button="@android:color/transparent"
+                android:background="@drawable/radio_selector"
+                android:textColor="@drawable/text_color"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:checked="false"/>
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating (persen)"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rgupdate"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvrt"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            />
+
+        <SeekBar
+            android:id="@+id/sbup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvrt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:min="0"
+            android:thumb="@drawable/thumb"
+            android:progressDrawable="@drawable/seekbar_background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 %"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sbup"
+            android:id="@+id/trup"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/trup"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvgup"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/trup"
+            android:layout_toLeftOf="@id/caup"
+            android:layout_marginTop="30dp"
+            android:id="@+id/crup"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/trup"
+            android:layout_marginTop="30dp"
+            android:id="@+id/caup"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comedy"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/trup"
+            android:layout_toRightOf="@id/caup"
+            android:layout_marginTop="30dp"
+            android:id="@+id/ccup"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horor"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/caup"
+            android:layout_marginTop="0dp"
+            android:id="@+id/chup"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sci Fi"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/caup"
+            android:layout_toRightOf="@id/chup"
+            android:layout_marginTop="0dp"
+            android:id="@+id/csup"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animation"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/caup"
+            android:layout_toLeftOf="@id/chup"
+            android:layout_marginTop="0dp"
+            android:id="@+id/canup"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Review"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/chup"
+            android:layout_marginTop="30dp"
+            android:onClick="updatedata"
+            android:background="@drawable/button"
+            android:id="@+id/btupdate"
+            />
+
+        <Button
+            android:id="@+id/btdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btupdate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:onClick="deletedata"
+            android:text="Delete Review"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+

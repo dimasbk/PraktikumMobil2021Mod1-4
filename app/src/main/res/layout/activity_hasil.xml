@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/blue_bg"
+            >
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvconf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Ini adalah hasil review anda"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tvconf"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_round"
+            android:elevation="8dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            />
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/judul"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_round"
+            android:elevation="8dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            />
+
+        <TextView
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tahun"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_round"
+            android:elevation="8dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/radio"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_round"
+            android:elevation="8dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/rating"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_round"
+            android:elevation="8dp"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+
+            />
+
+        <Button
+            android:id="@+id/buttonmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali ke menu"
+            android:layout_below="@id/genre"
+            android:paddingRight="7dp"
+            android:paddingLeft="7dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
